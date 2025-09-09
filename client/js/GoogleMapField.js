@@ -232,7 +232,7 @@ window.googlemapfieldInit = function () {
     };
 
     function init() {
-        var mapFields = $(".googlemapfield:visible").gmapfield();
+        var mapFields = $(".googlemapfield").gmapfield();
 
         mapFields.each(initField);
     }
