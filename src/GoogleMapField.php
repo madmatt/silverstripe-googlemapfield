@@ -79,6 +79,8 @@ class GoogleMapField extends CompositeField
             $this->defaultValues = $data;
         }
 
+        $this->addExtraClass('googlemapfield');
+
         $this->setupChildren();
 
     }
