@@ -102,9 +102,9 @@ class GoogleMapField extends CompositeField
 
     public function setValue($value, $data = null)
     {
-        if ($data) {
-            $this->setDataRecord($data);
-        } else if (!$this->children->count()) {
+        $this->setDataRecord($value);
+
+        if (!$this->children->count()) {
             $this->setupChildren();
         }
 
